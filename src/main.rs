@@ -45,7 +45,8 @@ pub fn print_arith_op_info(expr: &Expression, source: &mut Arc<str>) -> bool {
         | Expression::Modulo { left, right, .. }
         | Expression::Divide { left, right, .. }
         | Expression::And { left, right, .. }
-        | Expression::Or { left, right, .. } => {
+        | Expression::BitwiseAnd { left, right, .. }
+        | Expression::BitwiseOr { left, right, .. } => {
             let left_end = left.loc().end();
             let right_start = right.loc().start();
 

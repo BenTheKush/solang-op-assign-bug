@@ -4,7 +4,6 @@ pragma experimental ABIEncoderV2;
 
 contract foo {
     uint256 private _totalSupply;
-    bool private _someBool;
 
     function updateStorage() public {
         _totalSupply += 1;
