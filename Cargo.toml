@@ -1,0 +1,9 @@
+[package]
+name = "solang-bug-reproducability"
+authors = ["Ben Kushigian <bkushigian@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solang = { git = "https://github.com/hyperledger/solang.git", rev = "70af554c42748009e414e6263dd4607fb380e5dc", default-features = false }
+solang-parser = { git = "https://github.com/hyperledger/solang.git", rev = "70af554c42748009e414e6263dd4607fb380e5dc" }
