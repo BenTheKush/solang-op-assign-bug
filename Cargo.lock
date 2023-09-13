@@ -1839,7 +1839,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "solang-bug-reproducability"
+name = "solang-op-assign-bug"
 version = "0.1.0"
 dependencies = [
  "solang",
