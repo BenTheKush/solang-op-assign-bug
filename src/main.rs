@@ -103,9 +103,9 @@ fn issue1521() {
 }
 
 /// type(int256).min
-fn issue1522() {
-    print_issue_banner(1522, "TODO");
-    let (ns, cache, _source) = parse_filename(&"issue1522.sol".to_string());
+fn issue1523() {
+    print_issue_banner(1523, "https://github.com/hyperledger/solang/issues/1523");
+    let (ns, cache, _source) = parse_filename(&"issue1523.sol".to_string());
     if ns.diagnostics.any_errors() {
         error("issue1522.sol".to_string());
         println!("Solang diagnostics:");
@@ -117,5 +117,5 @@ fn issue1522() {
 
 fn main() {
     issue1521();
-    issue1522();
+    issue1523();
 }
