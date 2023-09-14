@@ -1,8 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity >0.7.0;
-pragma experimental ABIEncoderV2;
 
-contract foo {
+contract Issue1521 {
     uint256 private _totalSupply;
 
     function updateStorage() public {
