@@ -115,7 +115,21 @@ fn issue1523() {
     }
 }
 
+fn issue1524() {
+    print_issue_banner(1524, "https://github.com/hyperledger/solang/issues/1524");
+    let (ns, cache, _source) = parse_filename(&"issue1524.sol".to_string());
+    if ns.diagnostics.any_errors() {
+        error("issue1524.sol".to_string());
+        println!("Solang diagnostics:");
+        ns.print_diagnostics(&cache, false);
+    } else {
+        success();
+    }
+
+}
+
 fn main() {
     issue1521();
     issue1523();
+    issue1524();
 }
