@@ -125,11 +125,36 @@ fn issue1524() {
     } else {
         success();
     }
+}
 
+fn issue1525() {
+    print_issue_banner(1525, "https://github.com/hyperledger/solang/issues/1525");
+    let (ns, cache, _source) = parse_filename(&"issue1525.sol".to_string());
+    if ns.diagnostics.any_errors() {
+        error("issue1525.sol".to_string());
+        println!("Solang diagnostics:");
+        ns.print_diagnostics(&cache, false);
+    } else {
+        success();
+    }
+}
+
+fn issue1526() {
+    print_issue_banner(1525, "https://github.com/hyperledger/solang/issues/1526");
+    let (ns, cache, _source) = parse_filename(&"issue1526.sol".to_string());
+    if ns.diagnostics.any_errors() {
+        error("issue1526.sol".to_string());
+        println!("Solang diagnostics:");
+        ns.print_diagnostics(&cache, false);
+    } else {
+        success();
+    }
 }
 
 fn main() {
     issue1521();
     issue1523();
     issue1524();
+    issue1525();
+    issue1526();
 }
